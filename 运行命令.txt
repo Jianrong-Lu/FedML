@@ -1,0 +1,307 @@
+cd Alvin/fedml_milite/fedml_experiments/standalone/fedavg
+cd Alvin/fedml/fedml_experiments/standalone/fedavg
+mul:
+sh run_Fisher_standalone_pytorch.sh 1 100 10 5 mnist ./../../../data/mnist cnn hetero 600 1 0.02 sgd fedTye 0.01 0.2 
+sh run_Fisher_standalone_pytorch.sh 1 100 10 5 mnist ./../../../data/mnist cnn hetero 600 1 0.02 sgd feddyn 0.1  0.2 
+sh run_Fisher_standalone_pytorch.sh 1 100 10 5 mnist ./../../../data/mnist cnn hetero 600 1 0.02 sgd feddyn 0.1  0.2 
+sh run_Fisher_standalone_pytorch.sh 1 100 10 5 mnist ./../../../data/mnist cnn hetero 600 1 0.02 sgd feddyn 0.01  0.2 
+sh run_Fisher_standalone_pytorch.sh 1 100 10 5 mnist ./../../../data/mnist cnn hetero 600 1 0.02 sgd feddyn 0.001  0.2 
+sh run_Fisher_standalone_pytorch.sh 1 100 10 5 mnist ./../../../data/mnist cnn hetero 600 1 0.02 sgd mime 0.9 0.2
+
+mul:
+sh run_Fisher_standalone_pytorch.sh 1 100 10 5 mnist ./../../../data/mnist cnn hetero 600 1 0.02 sgd fedTest 0.01 0.2 
+sh run_Fisher_standalone_pytorch.sh 1 100 10 5 mnist ./../../../data/mnist cnn hetero 600 1 0.02 sgd fedTest 1  0.2 
+sh run_Fisher_standalone_pytorch.sh 0 100 10 5 mnist ./../../../data/mnist cnn hetero 600 1 0.02 sgd fedTest 0.1  0.2 
+sh run_Fisher_standalone_pytorch.sh 1 100 10 5 mnist ./../../../data/mnist cnn hetero 600 1 0.02 sgd fedTest 0.01  0.2
+sh run_Fisher_standalone_pytorch.sh 1 100 10 5 mnist ./../../../data/mnist cnn hetero 600 1 0.02 sgd fedTest_Nomeanloss 0.1  0.2 
+sh run_Fisher_standalone_pytorch.sh 1 100 10 5 mnist ./../../../data/mnist cnn hetero 600 1 0.02 sgd fedTest_Nomeanloss 0.01  0.2 
+sh run_Fisher_standalone_pytorch.sh 1 100 10 5 mnist ./../../../data/mnist cnn hetero 600 1 0.02 sgd fedTest_Nomeanloss 0.001  0.2 
+sh run_Fisher_standalone_pytorch.sh 1 100 10 5 mnist ./../../../data/mnist cnn hetero 600 1 0.02 sgd fedTest_NoMetaGrad 0.1  0.2 
+sh run_Fisher_standalone_pytorch.sh 1 100 10 5 mnist ./../../../data/mnist cnn hetero 600 1 0.02 sgd fedTest_NoMetaGrad 0.01  0.2 
+sh run_Fisher_standalone_pytorch.sh 1 100 10 5 mnist ./../../../data/mnist cnn hetero 600 1 0.02 sgd fedTest_NoMetaGrad 0.001  0.2
+sh run_Fisher_standalone_pytorch.sh 1 100 10 5 mnist ./../../../data/mnist cnn hetero 600 1 0.02 sgd fedTest_momemtum 0.1  0.2 
+sh run_Fisher_standalone_pytorch.sh 1 100 10 5 mnist ./../../../data/mnist cnn hetero 600 1 0.02 sgd fedTest_momemtum 0.01  0.2 
+sh run_Fisher_standalone_pytorch.sh 1 100 10 5 mnist ./../../../data/mnist cnn hetero 600 1 0.02 sgd fedTest_momemtum 0.001  0.2       
+sh run_Fisher_standalone_pytorch.sh 1 100 10 5 mnist ./../../../data/mnist cnn hetero 600 1 0.02 sgd fedTest 0.001  0.2 
+sh run_Fisher_standalone_pytorch.sh 1 100 10 5 mnist ./../../../data/mnist cnn hetero 600 1 0.02 sgd fedTest 0.0001  0.2 
+sh run_fednova_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn hetero 2500 1 0.2 0 0 0 0 0 0 0 0 0.2
+sh run_fednova_standalone_pytorch.sh 1 100 10 5 mnist ./../../../data/mnist cnn hetero 600 1 0.02 0 0 0 0 0 0 0 0 0.2
+
+mul:
+sh run_Fisher_standalone_pytorch.sh 1 100 10 5 mnist ./../../../data/mnist cnn hetero 600 1 0.02 sgd fedTye 0.01 0.2 
+sh run_Fisher_standalone_pytorch.sh 1 100 10 5 mnist ./../../../data/mnist cnn hetero 600 1 0.02 sgd feddyn 0.1  0.2 
+sh run_Fisher_standalone_pytorch.sh 1 100 10 5 mnist ./../../../data/mnist cnn hetero 600 1 0.02 sgd feddyn 0.1  0.2 
+sh run_Fisher_standalone_pytorch.sh 1 100 10 5 mnist ./../../../data/mnist cnn hetero 600 1 0.02 sgd feddyn 0.01  0.2 
+sh run_Fisher_standalone_pytorch.sh 1 100 10 5 mnist ./../../../data/mnist cnn hetero 600 1 0.02 sgd feddyn 0.001  0.2 
+sh run_Fisher_standalone_pytorch.sh 1 100 10 5 mnist ./../../../data/mnist cnn hetero 600 1 0.02 sgd feddyn 0.0001  0.2 
+
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn homo 2500 1 0.2 sgd fedTye 1 0.3
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn homo 2500 1 0.2 sgd fedTye 0.1 0.3
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn homo 2500 1 0.2 sgd fedTest 0.01 200
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn homo 2500 1 0.2 sgd fedTest 0.001 200
+sh run_Fisher_standalone_pytorch.sh 1 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn homo 2500 1 0.2 sgd fedTest 0.0001 200
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn homo 2500 1 0.2 sgd fedTest_Nomeanloss 0.01 200
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn homo 2500 1 0.2 sgd fedTest_Nomeanloss 0.001 200
+sh run_Fisher_standalone_pytorch.sh 1 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn homo 2500 1 0.2 sgd fedTest_Nomeanloss 0.0001 200
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn homo 2500 1 0.2 sgd fedTest_NoMetaGrad 0.01 200
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn homo 2500 1 0.2 sgd fedTest_NoMetaGrad 0.001 200
+sh run_Fisher_standalone_pytorch.sh 1 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn homo 2500 1 0.2 sgd fedTest_NoMetaGrad 0.0001 200
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn homo 2500 1 0.2 sgd fedTest_momemtum 0.1 200
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn homo 2500 1 0.2 sgd fedTest_momemtum 0.4 200
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn homo 2500 1 0.2 sgd fedTest_momemtum 0.9 200
+sh run_Fisher_standalone_pytorch.sh 1 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn homo 2500 1 0.2 sgd fedTest_momemtum 0.99 200
+
+
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn homo 2500 1 0.2 sgd fedTest 0.01 200
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn homo 2500 1 0.2 sgd fedTest 0.001 200
+sh run_Fisher_standalone_pytorch.sh 1 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn homo 2500 1 0.2 sgd fedTest 0.0001 200
+
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn homo 2500 1 0.2 sgd fedTest_Nomeanloss 0.01 200
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn homo 2500 1 0.2 sgd fedTest_Nomeanloss 0.001 200
+sh run_Fisher_standalone_pytorch.sh 1 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn homo 2500 1 0.2 sgd fedTest_Nomeanloss 0.0001 200
+
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn homo 2500 1 0.2 sgd fedTest_NoMetaGrad 0.1 200
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn homo 2500 1 0.2 sgd fedTest_NoMetaGrad 0.01 200
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn homo 2500 1 0.2 sgd fedTest_NoMetaGrad 0.001 200
+sh run_Fisher_standalone_pytorch.sh 1 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn homo 2500 1 0.2 sgd fedTest_NoMetaGrad 0.0001 200
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn homo 2500 1 0.2 sgd fedTest_momemtum 0.1 200
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn homo 2500 1 0.2 sgd fedTest_momemtum 0.4 200
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn homo 2500 1 0.2 sgd fedTest_momemtum 0.9 200
+sh run_Fisher_standalone_pytorch.sh 1 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn homo 2500 1 0.2 sgd fedTest_momemtum 0.99 200
+
+1 GPU号
+1000，设置总用户数，MNIST，目前只有1000个用户；
+10，表示每轮采样10个用户，
+5，batch_size=5
+cnn, model =cnn,.
+2000, 表示FL的运行轮次，
+40, 表示本地运行轮次，
+0.02, 本地学习率，
+sgd, 表示优化方式使用sgd；
+feddyn, 表示使用的方法；可改为fedavg
+0.01 表示feddyn的超参数alpha；
+0.2 表示迪利克雷的noniid划分参数，不过在mnist上，没有用迪利克雷的noniid划分方式，cifar10/100都用。
+noniid
+test
+sh run_Fisher_standalone_pytorch.sh 0 6 6 32 cifar10 ./../../../data/cifar10 resnet18_gn hetero 1600 1 0.2 sgd fedavg 0.0 0.4
+sh run_Fisher_standalone_pytorch.sh 0 6 6 32 cifar10 ./../../../data/cifar10 resnet18_gn hetero 1600 1 0.2 sgd fedTye 0.001 0.4
+sh run_Fisher_standalone_pytorch.sh 0 6 6 32 cifar10 ./../../../data/cifar10 resnet18_gn hetero 1600 1 0.2 sgd feddyn 0.1 0.4
+sh run_Fisher_standalone_pytorch.sh 0 6 6 32 cifar10 ./../../../data/cifar10 resnet18_gn hetero 1600 1 0.2 sgd feddyn 0.01 0.4
+sh run_Fisher_standalone_pytorch.sh 0 6 6 32 cifar10 ./../../../data/cifar10 resnet18_gn hetero 1600 1 0.2 sgd feddyn 0.0001 0.4
+sh run_Fisher_standalone_pytorch.sh 0 6 6 32 cifar10 ./../../../data/cifar10 resnet18_gn hetero 1600 1 0.2 sgd feddyn 0.00001 0.4
+sh run_Fisher_standalone_pytorch.sh 0 6 6 32 cifar10 ./../../../data/cifar10 resnet18_gn hetero 1600 1 0.2 sgd mimelite 0.01 0.4
+
+niid0.25 100 10% 
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn hetero 2500 1 0.2 sgd fedavg 0.0 0.3
+
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn hetero 2500 1 0.2 sgd fedTye 0.1 0.3
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn hetero 2500 1 0.2 sgd fedTye 0.01 0.3
+
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn hetero 2500 1 0.2 sgd feddyn 0.1 0.3从此开始未运行
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn hetero 2500 1 0.2 sgd feddyn 0.01 0.3
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn hetero 2500 1 0.2 sgd feddyn 0.001 0.3
+
+sh run_fednova_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn hetero 2500 1 0.2 0 0 0 0 0 0 0 0 0.2
+
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn hetero 2500 40 0.2 sgd mimelite 0.9 0.3
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn hetero 2500 40 0.2 sgd mime 0.9 0.3到此
+
+niid0.4 100 10% 
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn hetero 2500 1 0.2 sgd fedavg 0.0 0.4
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn hetero 1600 1 0.2 sgd fedTye 1 0.4
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn hetero 1600 1 0.2 sgd fedTye 0.1 0.4
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn hetero 1600 1 0.2 sgd fedTye 0.01 0.4
+sh run_Fisher_standalone_pytorch.sh 3 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn hetero 1600 1 0.2 sgd fedTye 0.001 0.4
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn hetero 1600 1 0.2 sgd fedTye 0.0001 0.4
+
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn hetero 1600 1 0.2 sgd feddyn 1 0.4
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn hetero 1600 1 0.2 sgd feddyn 0.1 0.4 缺
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn hetero 1600 1 0.2 sgd feddyn 0.01 0.4
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn hetero 1600 1 0.2 sgd feddyn 0.001 0.4
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn hetero 1600 1 0.2 sgd feddyn 0.0001 0.4
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn hetero 1600 1 0.2 sgd feddyn 0.00001 0.4
+
+
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn hetero 1600 40 0.2 sgd mimelite 0.01 0.4
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn hetero 1600 40 0.2 sgd mimelite 0.1 0.4
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn hetero 1600 40 0.2 sgd mimelite 0.9 0.4
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn hetero 1600 40 0.2 sgd mimelite 0.99 0.4
+
+
+niid0.6 100 10% 
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn hetero 1600 1 0.2 sgd fedavg 0.0 0.6
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn hetero 1600 1 0.2 sgd fedTye 1 0.6
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn hetero 1600 1 0.2 sgd fedTye 0.1 0.6
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn hetero 1600 1 0.2 sgd fedTye 0.01 0.6
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn hetero 1600 1 0.2 sgd fedTye 0.001 0.6
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn hetero 1600 1 0.2 sgd fedTye 0.0001 0.6
+
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn hetero 1600 1 0.2 sgd feddyn 1 0.6
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn hetero 1600 1 0.2 sgd feddyn 0.1 0.6
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn hetero 1600 1 0.2 sgd feddyn 0.01 0.6
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn hetero 1600 1 0.2 sgd feddyn 0.001 0.6
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn hetero 1600 1 0.2 sgd feddyn 0.0001 0.6
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn hetero 1600 1 0.2 sgd feddyn 0.00001 0.6
+
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn hetero 1600 40 0.2 sgd mimelite 0.01 0.6
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn hetero 1600 40 0.2 sgd mimelite 0.1 0.6
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn hetero 1600 40 0.2 sgd mimelite 0.9 0.6
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn hetero 1600 40 0.2 sgd mimelite 0.99 0.6
+
+iid 100 10%
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn homo 2500 1 0.2 sgd fedavg 0.0 0.2
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn homo 2500 1 0.2 sgd fedTye 0.1 0.2
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn homo 2500 1 0.2 sgd fedTye 0.01 0.2
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn homo 2500 1 0.2 sgd fedTye 0.001 0.2
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn homo 2500 1 0.2 sgd fedTye 0.0001 0.2
+
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn homo 2500 1 0.2 sgd feddyn 0.1 0.2
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn homo 2500 1 0.2 sgd feddyn 0.01 0.2
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn homo 2500 1 0.2 sgd feddyn 0.001 0.2
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn homo 2500 1 0.2 sgd feddyn 0.0001 0.2
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn homo 2500 1 0.2 sgd feddyn 0.00001 0.2
+
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn homo 2500 40 0.2 sgd mimelite 0.01 0.6
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn homo 2500 40 0.2 sgd mimelite 0.1 0.6
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn homo 2500 40 0.2 sgd mimelite 0.9 0.6
+sh run_Fisher_standalone_pytorch.sh 0 100 10 32 cifar10 ./../../../data/cifar10 resnet18_gn homo 2500 40 0.2 sgd mimelite 0.99 0.6
+
+
+sh run_fednova_standalone_pytorch.sh 0 100 10 32 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 1 0.2 0 0 0 0 0 0 0 0 0.2
+
+
+CIFAR100+resnet18_gn   都用resnet18_gn模型 
+mul for feddyn
+
+
+niid0.02 100 10%
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 1 0.2 sgd fedavg 0.0 0.02
+
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 1 0.2 sgd feddyn 0.1 0.02
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 1 0.2 sgd feddyn 0.01 0.02
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 1 0.2 sgd feddyn 0.001 0.02
+
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 1 0.2 sgd fedTye 0.1 0.02
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 1 0.2 sgd fedTye 0.01 0.02
+
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 40 0.2 sgd mimelite 0.01 0.02
+sh run_Fisher_standalone_pytorch.sh 3 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 40 0.2 sgd mimelite 0.9 0.02
+
+sh run_fednova_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 1 0.2 0 0 0 0 0 0 0 0 0.02
+
+
+niid0.1 100 10%
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 1 0.2 sgd fedavg 0.0 0.1
+
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 1 0.2 sgd feddyn 0.1 0.1
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 1 0.2 sgd feddyn 0.01 0.1
+
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 1 0.2 sgd fedTye 0.1 0.1
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 1 0.2 sgd fedTye 0.01 0.1
+
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 40 0.2 sgd mimelite 0.01 0.1
+sh run_Fisher_standalone_pytorch.sh 3 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 40 0.2 sgd mimelite 0.9 0.1
+
+sh run_fednova_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 1 0.2 0 0 0 0 0 0 0 0 0.1
+
+
+
+
+
+niid0.3 100 10% 
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 1 0.2 sgd fedavg 0.0 0.3
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 1 0.2 sgd feddyn 0.1 0.3
+sh run_Fisher_standalone_pytorch.sh 1 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 1 0.2 sgd feddyn 0.01 0.4
+sh run_Fisher_standalone_pytorch.sh 2 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 1 0.2 sgd feddyn 0.001 0.4
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 1 0.2 sgd feddyn 0.0001 0.4
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 1 0.2 sgd feddyn 0.00001 0.4
+
+
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 1 0.2 sgd fedTye 0.1 0.3
+sh run_Fisher_standalone_pytorch.sh 3 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 1 0.2 sgd fedTye 0.01 0.3
+sh run_Fisher_standalone_pytorch.sh 2 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 1 0.2 sgd fedTye 0.001 0.3
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 1 0.2 sgd fedTye 0.0001 0.3
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 1 0.2 sgd fedTye 0.00001 0.3
+
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 40 0.2 sgd mimelite 0.01 0.3
+sh run_Fisher_standalone_pytorch.sh 3 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 40 0.2 sgd mimelite 0.1 0.3
+sh run_Fisher_standalone_pytorch.sh 2 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 40 0.2 sgd mimelite 0.9 0.3
+
+
+
+niid0.4 100 10%
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 1 0.2 sgd fedavg 0.0 0.4
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 1 0.2 sgd feddyn 0.1 0.4
+sh run_Fisher_standalone_pytorch.sh 1 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 1 0.2 sgd feddyn 0.01 0.4
+sh run_Fisher_standalone_pytorch.sh 2 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 1 0.2 sgd feddyn 0.001 0.4
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 1 0.2 sgd feddyn 0.0001 0.4
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 1 0.2 sgd feddyn 0.00001 0.4
+
+
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 1 0.2 sgd fedTye 0.1 0.4
+sh run_Fisher_standalone_pytorch.sh 3 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 1 0.2 sgd fedTye 0.01 0.4
+sh run_Fisher_standalone_pytorch.sh 2 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 1 0.2 sgd fedTye 0.001 0.4
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 1 0.2 sgd fedTye 0.0001 0.4
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 1 0.2 sgd fedTye 0.00001 0.4
+
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 40 0.2 sgd mimelite 0.01 0.4
+sh run_Fisher_standalone_pytorch.sh 3 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 40 0.2 sgd mimelite 0.1 0.4
+sh run_Fisher_standalone_pytorch.sh 2 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 40 0.2 sgd mimelite 0.9 0.4
+
+
+niid0.6 100 10% 
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 1 0.2 sgd fedavg 0.0 0.6
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 1 0.2 sgd feddyn 0.1 0.6
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 1 0.2 sgd feddyn 0.01 0.6
+sh run_Fisher_standalone_pytorch.sh 2 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 1 0.2 sgd feddyn 0.001 0.6
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 1 0.2 sgd feddyn 0.0001 0.6
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 1 0.2 sgd feddyn 0.00001 0.6
+
+
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 1 0.2 sgd fedTye 0.1 0.6
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 1 0.2 sgd fedTye 0.01 0.6
+sh run_Fisher_standalone_pytorch.sh 2 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 1 0.2 sgd fedTye 0.001 0.6
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 1 0.2 sgd fedTye 0.0001 0.6
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 1 0.2 sgd fedTye 0.00001 0.6
+
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 40 0.2 sgd mimelite 0.01 0.6
+sh run_Fisher_standalone_pytorch.sh 3 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 40 0.2 sgd mimelite 0.1 0.6
+sh run_Fisher_standalone_pytorch.sh 2 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn hetero 2500 40 0.2 sgd mimelite 0.9 0.6
+
+iid100 10% 
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn homo 2500 1 0.2 sgd fedavg 0.0 100
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn homo 2500 1 0.2 sgd feddyn 0.1 100
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn homo 2500 1 0.2 sgd feddyn 0.01 100
+sh run_Fisher_standalone_pytorch.sh 2 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn homo 2500 1 0.2 sgd feddyn 0.001 100
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn homo 2500 1 0.2 sgd feddyn 0.0001 100
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn homo 2500 1 0.2 sgd feddyn 0.00001 100
+
+
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn homo 2500 1 0.2 sgd fedTye 0.1 100
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn homo 2500 1 0.2 sgd fedTye 0.01 100
+sh run_Fisher_standalone_pytorch.sh 2 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn homo 2500 1 0.2 sgd fedTye 0.001 100
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn homo 2500 1 0.2 sgd fedTye 0.0001 100
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn homo 2500 1 0.2 sgd fedTye 0.00001 100
+
+sh run_Fisher_standalone_pytorch.sh 0 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn homo 2500 40 0.2 sgd mimelite 0.01 100以下还没运行。。。
+sh run_Fisher_standalone_pytorch.sh 3 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn homo 2500 40 0.2 sgd mimelite 0.1 100
+sh run_Fisher_standalone_pytorch.sh 2 100 10 16 cifar100 ./../../../data/cifar100 resnet18_gn homo 2500 40 0.2 sgd mimelite 0.9 100到此
+
+
+
+
+
+
+
+
+mnist + cnn   模型
+mul:
+sh run_Fisher_standalone_pytorch.sh 1 100 10 5 mnist ./../../../data/mnist cnn hetero 600 1 0.02 sgd fedavg 0.0 0.2 
+sh run_Fisher_standalone_pytorch.sh 1 100 10 5 mnist ./../../../data/mnist cnn hetero 600 1 0.02 sgd fedTye 0.1 0.2 
+sh run_Fisher_standalone_pytorch.sh 1 100 10 5 mnist ./../../../data/mnist cnn hetero 600 1 0.02 sgd fedTye 0.01 0.2 
+sh run_Fisher_standalone_pytorch.sh 1 100 10 5 mnist ./../../../data/mnist cnn hetero 600 1 0.02 sgd feddyn 0.1  0.2 
+sh run_Fisher_standalone_pytorch.sh 1 100 10 5 mnist ./../../../data/mnist cnn hetero 600 1 0.02 sgd feddyn 0.1  0.2 
+sh run_Fisher_standalone_pytorch.sh 1 100 10 5 mnist ./../../../data/mnist cnn hetero 600 1 0.02 sgd feddyn 0.01  0.2 
+sh run_Fisher_standalone_pytorch.sh 1 100 10 5 mnist ./../../../data/mnist cnn hetero 600 1 0.02 sgd feddyn 0.001  0.2 
+sh run_Fisher_standalone_pytorch.sh 1 100 10 5 mnist ./../../../data/mnist cnn hetero 600 1 0.02 sgd feddyn 0.0001  0.2 
+sh run_fednova_standalone_pytorch.sh 0 100 10 5 mnist ./../../../data/mnist cnn hetero 500 1 0.02 0 0 0 0 0 0 0 0 0.2
